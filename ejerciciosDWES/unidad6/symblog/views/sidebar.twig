@@ -1,0 +1,28 @@
+<section class="section">
+    <header>
+        <h3>Tag Cloud</h3>
+    </header>
+    <p class="tags">
+    {% for blog in blogs %}
+        <span class="weight-{{ blog.id }}">{{ blog.tags }}</span>
+    {% else %}
+        <p>There are no tags</p>
+    {% endfor %}
+    </p>
+</section>
+<section class="section">
+    <header>
+        <h3>Latest Comments</h3>
+    </header>
+    {% for blog in blogs %}
+        <article class="comment">
+            <header>
+                <p class="small"><span class="highlight">{{blog.user}}</span> commented on
+                    <a href="#">{{blog.title}}</a>
+                </p>
+            </header>
+        </article>
+    {% else %}
+        <p>There are no recent comments</p>
+    {% endfor %}
+</section>

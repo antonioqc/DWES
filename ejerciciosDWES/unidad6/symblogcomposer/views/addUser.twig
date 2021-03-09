@@ -1,0 +1,24 @@
+
+{% extends 'layout.twig' %} 
+{% block body %} 
+    <article class="blog"> 
+    <div> 
+        {{responseMessage}} 
+    </div> 
+    <h3>Add User</h3> 
+    <form name="formAddBlog" method="post" action="/ejerciciosDWES/unidad6/symblogcomposer/users/add" enctype="multipart/form-data"> 
+    <div id="enquiry"> 
+    <div> 
+        <label for="enquiry_mail" >Email</label> 
+        <input type="text" id="enquiry_mail" name="mail" required="required"/> 
+    </div> 
+    <div> 
+        <label for="enquiry_pass" >Password</label> 
+        <input type="password" id="enquiry_pass" name="pass" required="required"></input> 
+    </div> 
+        <input type="submit" id="enquiry_save" name="enquiry[save]"> 
+    </div> 
+    </div> 
+    </form> 
+    </article>
+{% endblock %}

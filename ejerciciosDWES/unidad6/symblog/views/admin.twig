@@ -1,0 +1,13 @@
+{% extends 'layout.twig' %}
+{% block body %}
+    <h1>Dashboard</h1>
+    <ul>
+        <li><a href="/ejerciciosDWES/unidad6/symblog/add">Add Blog</a></li>
+        <li><a href="/ejerciciosDWES/unidad6/symblog/adduser">Add User</a></li>
+    </ul>
+    <br><br>
+    <a href="/ejerciciosDWES/unidad6/symblog/logout">Logout</a>
+{% endblock %}
+{% block sidebar %}
+ {{ include ('sidebar.twig') }}
+{% endblock %}

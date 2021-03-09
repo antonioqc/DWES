@@ -1,0 +1,13 @@
+{% extends 'layout.twig' %} 
+{% block body %} 
+            <h2>Contact Symblog</h2>
+            <p>Want to contact Symblog?</p>
+                <form name="formAddBlog" method="post" action="#" enctype="multipart/form-data"> 
+                    <div><ul>
+                        <li><label>Name </label><input type="text" name="name" value=""></li>
+                        <li><label>Email </label><input type="text" name="email" value=""></li>
+                        <li><label>Body </label><textarea name="body" cols="40" rows="5" maxlength="10"></textarea></li>
+                        <li><label>Subject </label><input type="text" name="subject" value=""></li>
+                        <li><input type="submit" name="enviar" value="Enviar"></li>
+                </form>
+{% endblock %}
